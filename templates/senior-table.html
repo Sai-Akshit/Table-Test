@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device -width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      table,th,td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          text-align: center;
+      }
+      td{
+          height: 50px;
+          width: 60px;
+      }
+      
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+        <th>START</th>
+        <th>08:00</th>
+        <th>09:00</th>
+        <th>10:00</th>
+        <th>11:00</th>
+        <th>12:00</th>
+        <th>13:00</th>
+        <th>14:00</th>
+        <th>15:00</th>
+        <th>16:00</th>
+        <th>17:00</th>
+        </tr>
+        <tr>
+            <th>END</th>
+            <th>08:50</th>
+            <th>09:50</th>
+            <th>10:50</th>
+            <th>11:50</th>
+            <th>12:50</th>
+            <th>13:50</th>
+            <th>14:50</th>
+            <th>15:50</th>
+            <th>16:50</th>
+            <th>17:50</th>
+
+        </tr>
+        <tr>
+            <th rowspan="2">MONDAY</th>
+            <td rowspan="2">{{ A1 }}</td>
+            <td>{{ B1 }}</td>
+            <td>{{ TC1 }}</td>
+            <td>{{ D1 }}</td>
+            <td>{{ E1 }}</td>
+            <td>{{ F1 }}</td>
+            <td>{{ G1 }}</td>
+            <td>{{ H1 }}</td>
+            <td>{{ TI1 }}</td>
+            <td>{{ J1 }}</td>
+        </tr>
+        <tr>
+
+            <td colspan="2">{{ L1 }}</td>
+            {% if tt['D1'] == ' 'and tt['E1'] == ' '  %}
+                <td colspan="2">{{ L2 }}</td>
+            {% endif %}
+            <td colspan="2">{{ L3 }}</td>
+            <td colspan="2">{{ L4 }}</td>
+        </tr>
+        <tr>
+            <th rowspan="2">TUESDAY</th>
+            <td rowspan="2">{{ A1 }}</td>
+            <td>{{ C1 }}</td>
+            <td>{{ B1 }}</td>
+            <td rowspan="2" colspan="3">STUDENT LIFE</td>
+            <td>{{ H1 }}</td>
+            <td>{{ TE11 }}</td>
+            <td>{{ D1 }}</td>
+            <td>{{ J1 }}</td>
+          
+        </tr>
+        <tr>
+            <td colspan="2">{{ L5 }}</td>
+            <td colspan="2">{{ L6 }}</td>
+        </tr>
+        <tr>
+            <th rowspan="2">WEDNESDAY</th>
+            <td rowspan="2">{{ TA11 }}</td>
+            <td>{{ I1 }}</td>
+            <td>{{ TH1 }}</td>
+            <td>{{ G1 }}</td>
+            <td>{{ F1 }}</td>
+            <td>{{ E1 }}</td>
+            <td>{{ TD11 }}</td>
+            <td>{{ TB1 }}</td>
+            <td>{{ C1 }}</td>
+            <td>{{ TJ11 }}</td>
+        </tr>
+        <tr>
+            <td colspan="2">{{ L7 }}</td> 
+            <td colspan="2">{{ L8 }}</td>
+            <td colspan="2">{{ L9 }}</td>
+            <td colspan="2">{{ L10 }}</td>   
+        </tr>
+        <tr>
+            <th rowspan="2">THURSDAY</th>
+            <td rowspan="2">{{ A1 }}</td>
+            <td>{{ D1 }}</td>
+            <td>{{ TE12 }}</td>
+            <td rowspan="2" colspan="3">STUDENT LIFE</td>
+            <td>{{ F1 }}</td>
+            <td>{{ TG1 }}</td>
+            <td>{{ I1 }}</td>
+            <td>{{ J1 }}</td>
+        </tr>
+        <tr>
+            <td colspan="2">{{ L11 }}</td>
+            <td colspan="2">{{ L12 }}</td>
+        </tr>
+        <tr>
+            <th rowspan="2">FRIDAY</th>
+            <td  rowspan="2">{{ TA12 }}</td>
+            <td>{{ C1 }}</td>
+            <td>{{ B1 }}</td>
+            <td>{{ TD12 }}</td>
+            <td>{{ E1 }}</td>
+            <td>{{ TF1 }}</td>
+            <td>{{ G1 }}</td>
+            <td>{{ H1 }}</td>
+            <td>{{ I1 }}</td>
+            <td>{{ TJ12 }}</td>
+        </tr>
+        <tr>
+            <td colspan="2">{{ L13 }}</td>
+            <td colspan="2">{{ L14 }}</td>
+            <td colspan="2">{{ L15 }}</td> 
+            <td colspan="2">{{ L16 }}</td> 
+        </tr>
+        <!-- <tr>
+            <th rowspan="">SATURDAY</th>
+            <td  rowspan="">XA</td>
+            <td>XB</td>
+            <td>XC</td>
+            <td>XD</td>
+            <td>XE</td>
+            <td>XF</td>
+            <td>XG</td>
+            <td>XH</td>
+            <td>XI</td>
+            <td>XJ</td>
+        </tr>  -->
+    </table>
+</body>
+</html>
